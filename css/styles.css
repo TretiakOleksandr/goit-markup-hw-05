@@ -170,6 +170,11 @@ img{
 .contact-list-icon{
     fill: #757575;
     margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func);
+ 
 }
 /* -------------end header--------------------- */
 /* --------------hero------------------------- */
@@ -428,9 +433,14 @@ margin-bottom: 16px;
     height: 44px;
     border-radius: 50%;
     background-color: transparent;
-    fill: #AFB1B8;
-
     transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func);
+}
+
+.social-list-icon{
+    fill: #AFB1B8;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: var(--time-func);
 }
@@ -477,10 +487,18 @@ margin-bottom: 16px;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func); 
 }
 
 .clients-list-icon{
     fill: #AFB1B8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-func);
 }
 
 .clients-list-link:hover .clients-list-icon,
@@ -603,7 +621,10 @@ transition-timing-function: var(--time-func);
 .project-button:hover,
 .project-button:focus{
 color: #FFFFFF;
-background-color: var(--accent-color);    
+background-color: var(--accent-color); 
+
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 /* -------------end portfolio projects button---------------- */
 /* --------------portfolio projects---------------- */
@@ -723,5 +744,18 @@ color: #757575;
     position: absolute;
     top: 10px;
     right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button-icon{
+    fill: #000000;
 }
 /* ----------end modal window------------- */
